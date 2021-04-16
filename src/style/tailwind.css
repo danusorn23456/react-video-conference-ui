@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.timing{
+    transition:all 200ms;
+}
+
+button:focus{
+    outline:none;
+}
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+/* width */
+.custome-scrollbar-::-webkit-scrollbar {
+    width: 8px;
+}
+  
+  /* Track */
+.custome-scroll-bar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+  
+  /* Handle */
+.custome-scrollbar::-webkit-scrollbar-thumb {
+    background: dimGray;
+    border-radius: 10px;
+}
+
+::-webkit-file-upload-button {
+    cursor:pointer;
+}
+
+/* IE11 (if it doesn't work, try maybe also on the parent/wrapper) */
+input[type=file] {
+    cursor:pointer;
+}
